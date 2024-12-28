@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Markdown</title>
+</head>
+<body>
+    <h1>Gerador de Arquivos Markdown</h1>
+    <form action="/generate" method="post">
+        <label for="project_name">Nome do Projeto:</label><br>
+        <input type="text" id="project_name" name="project_name" required><br><br>
+
+        <label for="description">Descrição:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <label for="technologies">Tecnologias:</label><br>
+        <textarea id="technologies" name="technologies" required></textarea><br><br>
+
+        <label for="license">Licença (opcional):</label><br>
+        <textarea id="license" name="license"></textarea><br><br>
+
+        <button type="submit">Gerar Arquivos</button>
+    </form>
+</body>
+</html>
